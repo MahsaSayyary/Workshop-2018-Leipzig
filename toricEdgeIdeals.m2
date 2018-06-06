@@ -37,3 +37,13 @@ toricEdgeIdeal = (GRAPH) -> (
 
 J=toricEdgeIdeal(G)
 
+----------------------------------------
+Extracting information from Betti Table:
+----------------------------------------
+
+n=# (peek betti res I);
+
+Listi = apply(n-1, i -> (value (peek betti res I)#(i+1))#0#0)
+Listj = apply(n-1, i -> (value (peek betti res I)#(i+1))#0#2)
+
+
